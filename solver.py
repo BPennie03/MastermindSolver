@@ -2,11 +2,10 @@ import itertools
 
 
 NUM_COLORS = 8
-CODE_LENGTH = 4
 
 
 def generate_codes():
-    return [list(code) for code in itertools.product(range(1, NUM_COLORS + 1), repeat=CODE_LENGTH)]
+    return [list(code) for code in itertools.product(range(1, NUM_COLORS + 1), repeat=4)]
 
 
 def score_guess(guess, solution):
